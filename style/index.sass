@@ -1,0 +1,94 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;0,800;1,300;1,400;1,600;1,700;1,800&display=swap')
+
+*
+  margin: 0px
+  padding: 0px
+
+#start-container
+  position: relative
+  transform: translate(-50%, -0%)
+  left: 50%
+
+  padding: 5vh 0
+
+  box-shadow: 0 1px 5px rgba(0, 0, 0, .5)
+
+  text-align: center
+  font-family: "Open Sans", Serif
+  font-weight: 800
+  font-size: 28px
+  text-transform: uppercase
+
+  background-color: #1f80f0
+
+#page-content
+  text-align: center
+  font-family: "Open Sans", Serif
+  font-weight: 400
+  font-size: 18px
+  text-transform: uppercase
+
+  p
+    position: relative
+    transform: translate(-50%, -0%)
+    left: 50%
+
+    margin-top: 7.5vh
+
+    margin-bottom: 10vh
+
+    max-width: 60vw
+
+  h2
+    font-size: 22px
+    font-weight: 700
+
+.flex-box
+  position: relative
+  transform: translate(-50%, -0%)
+  left: 50%
+
+  display: flex
+  flex-direction: row
+  flex-wrap: wrap
+  justify-content: space-around
+
+  font-family: "Open Sans", serif
+  text-align: center
+  font-weight: 600
+
+  margin: 3.5rem 0 10vh
+  padding: .5rem
+
+  width: 80vw
+
+  .flex-item
+    word-wrap: break-word
+
+    width: 25%
+    border-radius: 5px
+    box-shadow: 0 0 10px rgba(0, 0, 0, .125)
+    padding: 1rem
+
+    background-color: #1f80f0
+
+    transition-duration: .25s
+
+    .flex-icon
+      width: 64px
+      height: 64px
+
+    .flex-title
+      font-weight: 600
+      font-size: 24px
+
+    .flex-description
+      font-weight: 400
+      font-size: 12px
+
+    &:hover
+      transform: scale(.95)
+      box-shadow: none
+
+      cursor: pointer
+      border-radius: 10px

@@ -1,0 +1,158 @@
+@import url("https://fonts.googleapis.com/css2?family=Muli:wght@200;300;600;900&display=swap");
+* {
+  margin: 0px;
+  padding: 0px;
+}
+
+body {
+  background-image: url("../src/spawn.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+#title {
+  position: relative;
+  text-align: center;
+  margin: 10vh 0 2.5vh 0;
+  font-family: "Muli", sans-serif;
+  font-weight: 900;
+  font-size: 32px;
+  color: white;
+}
+
+form {
+  text-align: center;
+  position: relative;
+  transform: translate(-50%, 0);
+  left: 50%;
+  width: auto;
+  margin-bottom: 3rem;
+}
+
+#search, #submit {
+  font-size: 20px;
+  font-family: "Muli", sans-serif;
+  font-weight: 200;
+  padding: 1.5vh 0.75vw;
+  border: 1px solid black;
+  transition-duration: 0.2s;
+}
+
+#search {
+  width: 25vw;
+}
+#search:focus {
+  border: 1px solid limegreen;
+  outline: none;
+}
+
+#submit:hover {
+  background: limegreen;
+}
+
+hr {
+  position: relative;
+  transform: translateX(-50%);
+  left: 50%;
+  height: 0.1px;
+  color: rgba(0, 0, 0, 0.15);
+  background-color: rgba(0, 0, 0, 0.15);
+  margin-bottom: 3rem;
+  width: 65vw;
+}
+
+#popup {
+  position: fixed;
+  left: 2%;
+  top: 2%;
+  z-index: 99;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+  padding: 1rem 3.75rem;
+}
+#popup a {
+  text-transform: uppercase;
+  text-decoration: underline;
+  color: limegreen;
+  cursor: pointer;
+  font-family: "Muli", sans-serif;
+  font-size: 16px;
+}
+
+.mc-head {
+  border-radius: 5px;
+}
+
+#info {
+  text-align: center;
+  font-family: "Muli", sans-serif;
+  font-size: 26px;
+  font-weight: 600;
+}
+
+.list-user-card:hover {
+  cursor: help;
+}
+
+#flexcontainer {
+  position: relative;
+  transform: translate(-50%, 0);
+  left: 50%;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding: 5vh 7.5vw;
+  background-color: rgba(255, 255, 255, 0.6);
+  text-align: center;
+  width: 75vw;
+}
+#flexcontainer .flexelement:hover > .icon {
+  filter: drop-shadow(2px 2px 15px rgba(0, 0, 0, 0.2));
+  /*text-shadow: 0 0 10px rgba(0, 0, 0, .1)*/
+  transform: scale(1.175) rotate(2deg);
+}
+#flexcontainer .flexelement {
+  width: 15vw;
+  padding: 30px 15px;
+  margin-bottom: 2rem;
+  text-align: center;
+  font-family: "Muli", sans-serif;
+  background-color: white;
+  opacity: 75%;
+  transition-duration: 0.15s;
+}
+#flexcontainer .flexelement:hover {
+  opacity: 95%;
+  /*border-radius: 35% 0 35% 0*/
+  box-shadow: 0 3px 15px rgba(0, 0, 0, 0.4);
+  transform: scale(1.1);
+}
+#flexcontainer .flexelement:hover:not(.list-user-card) {
+  cursor: default;
+}
+#flexcontainer .flexelement .icon {
+  width: 85px;
+  height: 85px;
+  margin-bottom: 8px;
+  transition-duration: 0.2s;
+  transition-delay: 0.05s;
+}
+#flexcontainer .flexelement .caption {
+  text-transform: uppercase;
+  font-size: 14px;
+  font-weight: 300;
+  text-decoration: underline;
+}
+#flexcontainer .flexelement .value {
+  font-size: 32px;
+  color: limegreen;
+  font-weight: 900;
+}
+#flexcontainer .flexelement .subvalue {
+  font-size: 20px;
+  font-weight: 600;
+  color: green;
+}
+
+/*# sourceMappingURL=nutzer.css.map */

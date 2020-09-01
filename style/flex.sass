@@ -1,0 +1,67 @@
+#flexcontainer
+  position: relative
+  transform: translate(-50%, 0)
+  left: 50%
+
+  display: flex
+  flex-direction: row
+  flex-wrap: wrap
+  justify-content: space-between
+
+  padding: 5vh 7.5vw
+
+  background-color: rgba(255, 255, 255, .75)
+
+  text-align: center
+
+  width: 75vw
+
+  .flexelement:hover > .icon
+    filter: drop-shadow(2px 2px 15px rgba(0, 0, 0, .2))
+    /*text-shadow: 0 0 10px rgba(0, 0, 0, .1)*/
+    transform: scale(1.175) rotate(2deg)
+
+  .flexelement
+    width: 28.25vw
+    padding: 50px 25px
+    margin-bottom: 1.75rem
+    text-align: center
+    font-family: 'Muli', sans-serif
+
+    background-color: rgba(255, 255, 255, 1)
+    opacity: 65%
+
+    transition-duration: .15s
+
+    &:hover
+      opacity: 95%
+      /*border-radius: 35% 0 35% 0*/
+      box-shadow: 0 3px 15px rgba(0, 0, 0, .4)
+      transform: scale(1.15)
+
+    &:hover:not(.list-user-card)
+      cursor: default
+
+    .icon
+      width: 85px
+      height: 85px
+      margin-bottom: 8px
+
+      transition-duration: .2s
+      transition-delay: .05s
+
+    .caption
+      text-transform: uppercase
+      font-size: 14px
+      font-weight: 300
+      text-decoration: underline
+
+    .value
+      font-size: 32px
+      color: limegreen
+      font-weight: 900
+
+    .subvalue
+      font-size: 20px
+      font-weight: 600
+      color: green

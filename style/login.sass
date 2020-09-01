@@ -1,0 +1,97 @@
+@import url('https://fonts.googleapis.com/css2?family=Muli:wght@200;300;600;900&display=swap')
+
+
+*
+  margin: 0px
+  padding: 0px
+
+html
+  background-image: url("../src/spawn.png")
+  background-size: cover
+  background-repeat: no-repeat
+
+form
+  font-family: "Muli", sans-serif
+  font-weight: 600
+
+  background-color: #fff
+  position: relative
+  transform: translate(-50%, 0%)
+  top: 50%
+  left: 50%
+  margin: 7.5rem 0
+  padding: 1.5rem
+  box-shadow: 0px 0px 25px rgba(0, 0, 0, 0.15)
+  border-radius: 10px
+  width: 50%
+  background: #dddddd
+  background: linear-gradient(0deg, #dddddd 0%, white 100%)
+
+  h1
+    font-size: 24px
+    font-family: "Muli", sans-serif
+    font-weight: 900
+    text-transform: uppercase
+    text-decoration: underline
+    color: #DD7F0F
+    margin-bottom: 4rem
+
+  input
+    font-family: "Muli", sans-serif
+    font-weight: 300
+
+  input:not([type=submit])
+    position: relative
+    transform: translate(-50%, 0%)
+    left: 50%
+    font-size: 14px
+    padding: 0.75rem
+    margin: 0.25rem 0
+    border: none
+    box-shadow: inset 0 0 0 0 black
+    transition-duration: 0.25s
+    background-color: rgba(0, 0, 0, 0.05)
+    width: 60%
+
+  input[type=submit]
+    margin: 3rem 0 0.75rem 0
+    padding: 0.85rem 2.75rem
+    border: none
+    background: #E5E5E5
+    transition-duration: 0.2s
+    position: relative
+    transform: translate(-50%, 0%)
+    left: 90%
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.15)
+    border-radius: 5px
+
+  input[type=submit]:hover
+    cursor: pointer
+    background: #DD7F0F
+
+  input:not([type=submit]):hover
+    background-color: rgba(0, 0, 0, 0.15)
+
+  input:not([type=submit]):focus
+    box-shadow: inset 0 0 2px 0 black
+
+.info
+  width: 100vw
+  height: 100vh
+
+  text-align: center
+
+  p
+    position: absolute
+    transform: translate(-50%, -50%)
+    top: 50%
+    left: 50%
+
+    font-size: 32px
+    font-family: "Muli", sans-serif
+    font-weight: 600
+
+    border-radius: 10px
+    background-color: whitesmoke
+
+    padding: 1.5rem 3.75rem
